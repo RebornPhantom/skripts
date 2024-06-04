@@ -1,0 +1,6 @@
+on chat:
+    if player is "3xi":
+        if message is "Wanna See A Magic Trick?":
+            wait 5 seconds
+            loop all players:
+                apply levitation 1 to loop-player for 2 seconds
