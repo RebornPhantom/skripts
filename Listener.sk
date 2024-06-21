@@ -1,0 +1,8 @@
+on chat:
+    if event is cancelled:
+        set {_message} to "%player%: %message%"
+        set {_webhookURL} to "https://your-webhook-url.com"
+        make new discord webhook:
+            set url of webhook to {_webhookURL}
+            set message of webhook to {_message}
+            execute webhook
